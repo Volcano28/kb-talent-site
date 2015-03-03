@@ -1,0 +1,74 @@
+<div class="page-header">
+  <div class="jumbotron">
+    <h1 class="text-center" style="color:#333333;">
+      Registration
+    </h1>
+  </div>
+</div>
+
+<div class="container">
+  <form action="/register" method="post" class="form-horizontal">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Personal Details</h2>
+        <div class="form-group">
+          <label for="first_name" class="col-sm-2">First Name</label>
+          <input type="text" class="form-control col-sm-9" name="first_name" placeholder="John">
+        </div>
+        <div class="form-group">
+          <label for="last_name" class="col-sm-2">Last Name</label>
+          <input type="text" class="form-control col-sm-9" name="last_name" placeholder="Smith">
+        </div>  
+        <div class="form-group">
+          <label for="date_of_birth" class="col-sm-2">D.O.B</label>
+          <input type="date" class="form-control col-sm-9" name="date_of_birth">
+        </div>
+        <div class="form-group">
+          <label for="email" class="col-sm-2">Email</label>
+          <input type="email" class="form-control col-sm-9" name="email" placeholder="your-email@here.com">
+        </div>
+        <div class="form-group">
+          <label for="confirm_email" class="col-sm-2">Retype Email</label>
+          <input type="email" class="form-control col-sm-9" name="confirm_email" placeholder="your-email@here-again.com">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h2>Submission Details</h2>
+        <div class="form-group">
+          <label for="type" class="col-sm-2">Type</label>
+          <select name="type" id="type" class="form-control col-sm-9">
+            <option value="youtube">YouTube</option>
+            <option value="soundcloud">SoundCloud</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="link" class="col-sm-2">Link</label>
+          <input type="text" class="form-control col-sm-9" name="link">
+        </div>
+        <div class="form-group">
+          <div class="label-warning" style="color:#333333; padding: 10px;">
+            <h3>Please Read</h3>
+            <p>By checking the checkbox below, you agree to all the terms and services in this link: <a href="">Agreement</a></p>
+            <p><input type="checkbox" name="agree_to_terms"> I hereby agree to all terms listed in the link above.</p>
+          </div>
+        </div>
+        <div class="form-group">
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="text-center">
+      <em>All Fields are required.</em>
+      <hr>
+      <div class="alert alert-danger">
+        <h3>Important!</h3>
+        <p>
+          Upon submission, you will be redirected to Paypal to submit your registration fee. Failure to pay the registration fee will result in a forfeit in your application, and will not be considered for entry.
+        </p>
+      </div>
+      <hr>
+        <button class="btn-lg btn-success" type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

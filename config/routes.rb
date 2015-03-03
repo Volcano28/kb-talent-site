@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'web#index'
+  get 'register', to: 'web#register'
+  post 'register', to: 'web#create_registration'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
