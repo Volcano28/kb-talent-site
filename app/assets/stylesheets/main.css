@@ -193,9 +193,8 @@ h2 {
 
 #explore {
   background-color: #C34C39;
-  background-image: url("/assets/
- event-bg.jpg");
- background-position: center bottom;
+  background-image: url("/assets/event-bg.jpg");
+  background-position: center bottom;
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
