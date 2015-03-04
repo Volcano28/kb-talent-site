@@ -1,0 +1,29 @@
+<h1>Listing test_registrations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Confirmed</th>
+      <th>Confirmation status</th>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @test_registrations.each do |test_registration| %>
+      <tr>
+        <td><%= test_registration.confirmed %></td>
+        <td><%= test_registration.confirmation_status %></td>
+        <td><%= test_registration.name %></td>
+        <td><%= link_to 'Show', test_registration %></td>
+        <td><%= link_to 'Edit', edit_test_registration_path(test_registration) %></td>
+        <td><%= link_to 'Destroy', test_registration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Test registration', new_test_registration_path %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Confirmed:</strong>
+  <%= @test_registration.confirmed %>
+</p>
+
+<p>
+  <strong>Confirmation status:</strong>
+  <%= @test_registration.confirmation_status %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @test_registration.name %>
+</p>
+
+<%= link_to 'Edit', edit_test_registration_path(@test_registration) %> |
+<%= link_to 'Back', test_registrations_path %>

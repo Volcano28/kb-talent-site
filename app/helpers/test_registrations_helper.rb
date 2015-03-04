@@ -1,0 +1,2 @@
+module TestRegistrationsHelper
+end
