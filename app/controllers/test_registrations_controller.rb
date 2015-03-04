@@ -26,7 +26,7 @@ class TestRegistrationsController < ApplicationController
   def create
     @test_registration = TestRegistration.new(test_registration_params)
       if @test_registration.save
-        redirect_to @test_registration.paypal_url("hook")
+        redirect_to @test_registration.paypal_url(test_registration_path(@test_registration))
       else
         format.html { render :new }
         format.json { render json: @test_registration.errors, status: :unprocessable_entity }
