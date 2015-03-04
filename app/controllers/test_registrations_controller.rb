@@ -64,7 +64,8 @@ class TestRegistrationsController < ApplicationController
     status = params[:payment_status]
     if status == "Completed"
       @test_registration = TestRegistration.find params[:invoice]
-      @test_registration.update_attribute confirmed: true
+      @test_registration.confirmed = true
+      @test_registration.save
     end
     render nothing: true
   end
