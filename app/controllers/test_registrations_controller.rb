@@ -1,6 +1,8 @@
 class TestRegistrationsController < ApplicationController
   before_action :set_test_registration, only: [:show, :edit, :update, :destroy]
 
+  protect_from_forgery except: [:hook]
+
   # GET /test_registrations
   # GET /test_registrations.json
   def index
