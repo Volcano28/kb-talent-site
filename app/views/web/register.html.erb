@@ -13,54 +13,64 @@
   </div>
 </div>
 
+<style>
+  .form-horizontal{
+    color: #cccccc;
+  }
+</style>
+
 <div class="container">
-  <form action="/register" method="post" class="form-horizontal">
+  <form action="/" method="post" class="form-horizontal">
     <div class="row">
       <div class="col-sm-6">
         <h2>Personal Details</h2>
-        <div class="form-group">
-          <label for="first_name" class="col-sm-2">First Name</label>
-          <input type="text" class="form-control col-sm-9" name="first_name" placeholder="John" required>
-        </div>
-        <div class="form-group">
-          <label for="last_name" class="col-sm-2">Last Name</label>
-          <input type="text" class="form-control col-sm-9" name="last_name" placeholder="Smith" required>
-        </div>  
-        <div class="form-group">
-          <label for="date_of_birth" class="col-sm-2">D.O.B</label>
-          <input type="date" class="form-control col-sm-9" name="date_of_birth" required>
-        </div>
-        <div class="form-group">
-          <label for="email" class="col-sm-2">Email</label>
-          <input type="email" class="form-control col-sm-9" name="email" placeholder="your-email@here.com required">
-        </div>
-        <div class="form-group">
-          <label for="confirm_email" class="col-sm-2">Retype Email</label>
-          <input type="email" class="form-control col-sm-9" name="confirm_email" placeholder="your-email@here-again.com" required>
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label for="first_name" class="col-sm-2">First Name</label>
+            <input type="text" class="form-control col-sm-9" name="first_name" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label for="last_name" class="col-sm-2">Last Name</label>
+            <input type="text" class="form-control col-sm-9" name="last_name" placeholder="Smith" required>
+          </div>  
+          <div class="form-group">
+            <label for="date_of_birth" class="col-sm-2">D.O.B</label>
+            <input type="date" class="form-control col-sm-9" name="date_of_birth" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-sm-2">Email</label>
+            <input type="email" class="form-control col-sm-9" name="email" placeholder="your-email@here.com required">
+          </div>
+          <div class="form-group">
+            <label for="confirm_email" class="col-sm-2">Retype Email</label>
+            <input type="email" class="form-control col-sm-9" name="confirm_email" placeholder="your-email@here-again.com" required>
+          </div>
         </div>
       </div>
       <div class="col-sm-6">
         <h2>Submission Details</h2>
-        <div class="form-group">
-          <label for="type" class="col-sm-2">Type</label>
-          <select name="type" id="type" class="form-control col-sm-9" required>
-            <option value="youtube">YouTube</option>
-            <option value="soundcloud">SoundCloud</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="link" class="col-sm-2">Link</label>
-          <input type="text" class="form-control col-sm-9 required" name="link">
-        </div>
-        <div class="form-group">
-          <div class="label-warning" style="color:#333333; padding: 10px;">
-            <h3>Please Read</h3>
-            <p>By checking the checkbox below, you agree to all the terms and services in this link: <a href="">Agreement</a></p>
-            <p><input type="checkbox" name="agree_to_terms"> I hereby agree to all terms listed in the link above.</p>
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label for="link" class="col-sm-2">Video</label>
+            <input type="text" class="form-control col-sm-9 required" name="video" placeholder="Video Link">
           </div>
-        </div>
-        <div class="form-group">
+          <div class="form-group">
+            <label for="link" class="col-sm-2">MP3 1</label>
+            <input type="text" class="form-control col-sm-9 required" name="mp3_1" placeholder="MP3 Link 1">
+          </div>
+          <div class="form-group">
+            <label for="link" class="col-sm-2">MP3 2</label>
+            <input type="text" class="form-control col-sm-9 required" name="mp3_2" placeholder="MP3 Link 2">
+          </div>
+          <div class="form-group">
+            <div class="label-warning" style="color:#333333; padding: 10px;">
+              <h3>Please Read</h3>
+              <p>By checking the checkbox below, you agree to all the terms and services in this link: <a href="">Agreement</a></p>
+              <p><input type="checkbox" name="agree_to_terms"> I hereby agree to all terms listed in the link above.</p>
+            </div>
+          </div>
+          <div class="form-group">
+          </div>
         </div>
       </div>
       <div class="clearfix"></div>
