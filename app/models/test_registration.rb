@@ -9,7 +9,7 @@ class TestRegistration < ActiveRecord::Base
         item_name: "KB Talent Registration Fee",
         amount: 25,
         quantity: '1',
-        notify_url: notify_url: "#{Rails.application.secrets.app_host}/hook"
+        notify_url: "#{Rails.application.secrets.app_host}/hook"
     }
     "#{Rails.application.secrets.paypal_host}/cgi-bin/webscr?" + values.to_query
   end
