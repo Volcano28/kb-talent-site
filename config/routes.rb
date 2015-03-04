@@ -10,13 +10,13 @@ Rails.application.routes.draw do
   post 'register', to: 'web#create_registration'
 
   #Paypal Hooks
-  if Rails.env.production?
-    post "registrations/:id", to: "registrations#show"
-    post "hook", to: "registrations"
-  else
+  # if Rails.env.production?
+  #   post "registrations/:id", to: "registrations#show"
+  #   post "hook", to: "registrations"
+  # else
     post "test_registrations/:id", to: "test_registrations#show"
     post "hook", to: "test_registrations#hook"
-  end
+  # end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
