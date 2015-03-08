@@ -1,18 +1,19 @@
 Rails.application.routes.draw do
-  resources :test_registrations
+  resources :registrations
+
+  #resources :test_registrations
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'web#index'
-  get 'register', to: 'web#register'
-  post 'register', to: 'web#create_registration'
+  get 'register', to: 'registrations#new'
 
   #Paypal Hooks
   if Rails.env.production?
     post "registrations/:id", to: "registrations#show"
-    post "hook", to: "registrations"
+    post "hook", to: "registrations#hook"
   else
     post "test_registrations/:id", to: "test_registrations#show"
     post "hook", to: "test_registrations#hook"

@@ -5,11 +5,11 @@
     </h1>
     <% if !@errors.blank? %>
       <% for item in @errors %>
-        <div class="alert alert-danger">
-          <span style="color:red;"><%= item %></span>
-        </div>
-        <% end %>
-          <% end %>
+    		<div class="alert alert-danger">
+        	  <span style="color:red;"><%= item %></span>
+    	    </div>
+	    <% end %>
+	<% end %>
   </div>
 </div>
 
@@ -20,78 +20,74 @@
 </style>
 
 <div class="container">
-  <form action="/" method="post" class="form-horizontal">
+  <%= form_for(Registration.new) do |f| %>
     <div class="row">
       <div class="col-sm-6">
-        <h2>Personal Details</h2>
         <div class="form-horizontal">
           <div class="form-group">
-            <label for="first_name" class="col-sm-2">First Name</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" name="first_name" placeholder="John" required>
-            </div>
+            <%=f.label :first_name, class: 'col-sm-2' %>
+              <div class="col-sm-9">
+                <%=f.text_field :first_name, class: 'form-control', placeholder: 'John', required: true %>
+              </div>
           </div>
           <div class="form-group">
-            <label for="last_name" class="col-sm-2">Last Name</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" name="last_name" placeholder="Smith" required>
-            </div>
+            <%=f.label :last_name, class: 'col-sm-2'%>
+              <div class="col-sm-9">
+                <%=f.text_field :last_name, class: 'form-control', placeholder: 'Smith', required: true%>
+              </div>
           </div>
           <div class="form-group">
-            <label for="date_of_birth" class="col-sm-2">D.O.B</label>
-            <div class="col-sm-9">
-              <input type="date" class="form-control" name="date_of_birth" required>
-            </div>
+            <%=f.label :date_of_birth, class: 'col-sm-2'%>
+              <div class="col-sm-9">
+                <%=f.date_select :date_of_birth, class: 'form-control', required: true%>
+              </div>
           </div>
           <div class="form-group">
-            <label for="email" class="col-sm-2">Email</label>
-            <div class="col-sm-9">
-              <input type="email" class="form-control" name="email" placeholder="your-email@here.com required">
-            </div>
+            <%=f.label :email, class: 'col-sm-2'%>
+              <div class="col-sm-9">
+                <%=f.text_field :email, class: 'form-control', placeholder: 'you@email.com', required: true%>
+              </div>
           </div>
           <div class="form-group">
-            <label for="confirm_email" class="col-sm-2">Retype Email</label>
-            <div class="col-sm-9">
-              <input type="email" class="form-control" name="confirm_email" placeholder="your-email@here-again.com" required>
-            </div>
+            <%=f.label :phone_number, class: 'col-sm-2'%>
+              <div class="col-sm-9">
+                <%=f.text_field :phone_number, class: 'form-control', placeholder: '7165555555', required: true%>
+              </div>
           </div>
         </div>
       </div>
       <div class="col-sm-6">
-        <h2>Submission Details</h2>
         <div class="form-horizontal">
           <div class="form-group">
-            <label for="link" class="col-sm-2">Video</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" required name="video" placeholder="Video Link">
-            </div>
+            <%=f.label :video, class: 'col-sm-2'%>
+              <div class="col-sm-9">
+                <%=f.text_field :video, class: 'form-control', placeholder: 'ex: youtube.com/myVideo', required: true%>
+              </div>
           </div>
           <div class="form-group">
-            <label for="link" class="col-sm-2">MP3 1</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control" required name="mp3_1" placeholder="MP3 Link 1">
-            </div>
+            <%=f.label :first_mp3, class: 'col-sm-2'%>
+              <div class="col-sm-9">
+                <%=f.text_field :first_mp3, class: 'form-control', placeholder: 'ex: http://first.mp3', required: true%>
+              </div>
           </div>
           <div class="form-group">
-            <label for="link" class="col-sm-2">MP3 2</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control " required name="mp3_2" placeholder="MP3 Link 2">
-            </div>
+            <%=f.label :second_mp3, class: 'col-sm-2'%>
+              <div class="col-sm-9">
+                <%=f.text_field :second_mp3, class: 'form-control', placeholder: 'ex: http://second.mp3', required: true%>
+              </div>
           </div>
           <div class="form-group">
             <div class="label-warning" style="color:#333333; padding: 10px;">
               <h3>Please Read</h3>
               <p>By checking the checkbox below, you agree to all the terms and services in this link: <a type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#agreements">Terms and Agreements</a>
               </p>
-              <p>
-                <input type="checkbox" name="agree_to_terms"> I hereby agree to all terms listed in the link above.</p>
+              <p><%=f.check_box :agreed_to_terms , required: true%> I hereby agree to all terms listed in the link above.</p>
             </div>
-          </div>
-          <div class="form-group">
           </div>
         </div>
       </div>
-      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
       <div class="text-center">
         <em>All Fields are required.</em>
         <hr>
@@ -102,14 +98,14 @@
           </p>
         </div>
         <hr>
-        <button class="btn-lg btn-success" type="submit">Submit</button>
-      </div>
-    </div>
-  </form>
+        <%= f.submit class: 'btn btn-lg btn-success', style: 'margin-bottom: 50px;'%>
+      </div>	
+      <% end %>
 </div>
 
+
 <!-- Modal -->
-<div class="modal fade" id="agreements" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="agreements" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="color:black">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">

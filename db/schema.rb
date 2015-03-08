@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150304013818) do
+ActiveRecord::Schema.define(version: 20150308114604) do
+
+  create_table "registrations", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.date     "date_of_birth"
+    t.string   "email"
+    t.string   "phone_number"
+    t.string   "video"
+    t.string   "first_mp3"
+    t.string   "second_mp3"
+    t.boolean  "agreed_to_terms"
+    t.boolean  "payment_confirmed"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "test_registrations", force: true do |t|
     t.boolean  "confirmed"

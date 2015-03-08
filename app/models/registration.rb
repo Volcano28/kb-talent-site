@@ -1,4 +1,4 @@
-class TestRegistration < ActiveRecord::Base
+class Registration < ActiveRecord::Base
   def paypal_url(return_path)
     values = {
         business: "#{Rails.application.secrets.paypal_merchant}",
