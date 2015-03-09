@@ -2,9 +2,42 @@
   <!--[if lt IE 9]>
   <script src="js/html5shiv.js"></script>
   <script src="js/respond.min.js"></script>
+  //id="center"
   <![endif]-->
 
+
+
   <style media="screen">
+  #center{
+    text-align: center;
+  }
+
+  .winning{
+    width: 50%;
+    height: 100%;
+  }
+
+  #dim{
+    height: 263px;
+    width:  263px;
+  }
+
+  #prizes{
+    background-color: #d1b618;
+    background-image: url("/assets/prizes.png");
+
+    background-size: contain;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cart a i {
+    font-size: 30px;
+    padding: 20px 12px;
+    background-color: #A64030;
+    margin-right: 3px;
+  }
 
     .twitter-timeline{
       width: 100%;
@@ -39,6 +72,10 @@
       width : 394px;
       height: 263px;
 
+    }
+
+    *{
+      color: white;
     }
   </style>
   <link rel="shortcut icon" href="assets/ico/favicon.ico">
@@ -99,24 +136,21 @@
           <img class="img-responsive" src="assets/slider/bg1.jpg" alt="slider">
           <div class="carousel-caption">
             <h2>register for our next event </h2>
-            <h4>full event package only @$199</h4>
-            <a href="#contact">GRAB YOUR TICKETS <i class="fa fa-angle-right"></i></a>
+            <a href="#contact">SIGN UP HERE <i class="fa fa-angle-right"></i></a>
           </div>
         </div>
         <div class="item">
           <img class="img-responsive" src="assets/slider/bg2.jpg" alt="slider">
           <div class="carousel-caption">
             <h2>register for our next event </h2>
-            <h4>full event package only @$199</h4>
-            <a href="#contact">GRAB YOUR TICKETS <i class="fa fa-angle-right"></i></a>
+            <a href="#contact">SIGN UP HERE<i class="fa fa-angle-right"></i></a>
           </div>
         </div>
         <div class="item">
           <img class="img-responsive" src="assets/slider/bg3.jpg" alt="slider">
           <div class="carousel-caption">
             <h2>register for our next event </h2>
-            <h4>full event package only @$199</h4>
-            <a href="#contact" >GRAB YOUR TICKETS <i class="fa fa-angle-right"></i></a>
+            <a href="#contact" >SIGN UP HERE <i class="fa fa-angle-right"></i></a>
           </div>
         </div>
       </div>
@@ -127,17 +161,20 @@
     <div class="guitar2">
       <img class="img-responsive" src="assets/guitar2.jpg" alt="guitar">
     </div>
-    <div class="about-content">
-      <h2>About the Talent Showcase</h2>
-<p>
-  The Kingdom Bound Festival reaches over <b>45,000</b> people from the Northern U.S. and Southern Ontario area with four days of concerts, seminars, sports and children’s activities held
-at the Darien Lake Theme Park Resort. </p>
 
-<p> More than a contest, the Kingdom Bound Talent Showcase continues to be a launch pad for Christian artists to fulfill their God-given calling.
-To all interested Musicians: practice hard, polish up, and come ready to have an amazing time, because this year’s Showcase is going to be the best one yet!
-</p>
+      <div class="about-content">
+        <h2>About the Talent Showcase</h2>
 
-    </div>
+          <p>
+              The Kingdom Bound Festival reaches over <b>45,000</b> people from the Northern U.S. and Southern Ontario area with four days of concerts, seminars, sports and children’s activities held
+              at the Darien Lake Theme Park Resort. </p>
+          <p>
+              More than a contest, the Kingdom Bound Talent Showcase continues to be a launch pad for Christian artists to fulfill their God-given calling.
+              To all interested Musicians: practice hard, polish up, and come ready to have an amazing time, because this year’s Showcase is going to be the best one yet!
+          </p>
+
+      </div>
+
   </section><!--/#about-->
 
   <!--/#home-->
@@ -173,9 +210,48 @@ To all interested Musicians: practice hard, polish up, and come ready to have an
         </div>
       </div>
       <div class="cart">
-        <a href="#"><i class="fa fa-user-plus"></i> <span>Register Now!</span></a>
+        <a href="/registration"><i class="fa fa-user-plus"></i> <span id="cart">Register Now!</span></a>
       </div>
     </div>
+  </section><!--/#explore-->
+
+  <section id="prizes">
+    <div class="container">
+      <div class="guitar">
+        <img class="img-responsive" src="assets/guitar.png" alt="guitar">
+      </div>
+
+      <div class="winning">
+
+          <h1 id="center">Prizes</h1>
+          <br>
+          <p>
+            6 finalists (1 regional, 1 Canadian, and 4 national) will then perform live at the Festival at the
+
+EDGE Stage on Saturday, July 25th in front of a panel of judges and a to-be-announced
+
+Kingdom Bound Artist.
+          </p>
+
+          <br><br>
+
+          <br>
+              <h2 id="center">Selected Finalists will receive:</h2>
+                <ul>
+                  <li>A Management and Promotional Team</li>
+                  <li>The opportunity to perform live on The Edge Stage at the 2015 Kingdom Bound </li>
+                </ul>
+<br>
+          <h2 id="center" >The Winning Finalist will</h2>
+            <ul>
+              <li>
+                   advance to the Christian Festival Association National Finals
+                   where they will have the opportunity to perform a paid tour of 14 different festivals across the nation!
+              </li>
+            </ul>
+
+        </div>
+      </div>
   </section><!--/#explore-->
 
   <section id="event">
@@ -189,21 +265,21 @@ To all interested Musicians: practice hard, polish up, and come ready to have an
                 <div class="row">
                   <div class="col-sm-4">
                     <div class="single-event">
-                      <img id="img"class="img-responsive" src="assets/event/event1.jpg" alt="event-image">
+                      <img id="img"class="img-responsive" src="assets/event/event1.jpg" id="dim" alt="event-image">
                       <h4>Chester Bennington</h4>
                       <h5>Vocal</h5>
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="single-event">
-                      <img id="img2" class="img-responsive" src="assets/event/event2.jpg" alt="event-image">
+                      <img id="img2" class="img-responsive" src="assets/event/event2.jpg" id="dim" alt="event-image">
                       <h4>Mike Shinoda</h4>
                       <h5>vocals, rhythm guitar</h5>
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="single-event">
-                      <img class="img-responsive" src="assets/event/event3.jpg" alt="event-image">
+                      <img class="img-responsive" src="assets/event/event3.png" alt="event-image" id="dim">
                       <h4>Rob Bourdon</h4>
                       <h5>drums</h5>
                     </div>
@@ -212,9 +288,6 @@ To all interested Musicians: practice hard, polish up, and come ready to have an
               </div>
             </div>
           </div>
-        </div>
-        <div class="guitar">
-          <img class="img-responsive" src="assets/guitar.png" alt="guitar">
         </div>
       </div>
     </div>
@@ -226,7 +299,7 @@ To all interested Musicians: practice hard, polish up, and come ready to have an
     <table id="tweeter">
       <tr>
         <td><h1 style="color: #1ba9f0;">Follow @KingdomBound on Twitter!</h1></td>
-      </tr>
+
       <tr>
         <td>
 
