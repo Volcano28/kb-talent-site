@@ -8,6 +8,11 @@
 
 
   <style media="screen">
+  #pics{
+      width: 100%;
+      height: 100%;
+  }
+
   #center{
     text-align: center;
   }
@@ -64,12 +69,9 @@
       margin-right: auto;
     }
 
-    #img2{
-      height: 263px;
 
-    }
-    #img3{
-      width : 394px;
+    #img{
+      width : 263px;
       height: 263px;
 
     }
@@ -109,13 +111,13 @@
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="scroll active"><a href="#home">Home</a></li>
-              <li class="scroll"><a href="#explore">Explore</a></li>
+              <li class="scroll"><a href="#explore">Explore KB Ministries</a></li>
               <li class="scroll"><a href="#event">Event</a></li>
               <li class="scroll"><a href="#about">About</a></li>
+              <li class="scroll"><a href="#prizes">Prizes</a></li>
               <li class="no-scroll"><a href="#twitter">Twitter</a></li>
-              <li><a class="no-scroll" href="#" target="_blank">PURCHASE TICKETS</a></li>
-              <li class="scroll"><a href="#contact">Contact</a></li>
+              <li><a class="no-scroll" href="#" target="_blank">REGISTER</a></li>
+<!--              <li class="scroll"><a href="#contact">Contact</a></li> -->
             </ul>
           </div>
         </div>
@@ -256,44 +258,54 @@ Kingdom Bound Artist.
 
   <section id="event">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-9">
-          <div id="event-carousel" class="carousel slide" data-interval="false">
-            <h2 class="heading">Previous Winners</h2>
-            <div class="carousel-inner">
-              <div class="item active">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <div class="single-event">
-                      <img id="img"class="img-responsive" src="assets/event/event1.jpg" id="dim" alt="event-image">
-                      <h4>Chester Bennington</h4>
-                      <h5>Vocal</h5>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="single-event">
-                      <img id="img2" class="img-responsive" src="assets/event/event2.jpg" id="dim" alt="event-image">
-                      <h4>Mike Shinoda</h4>
-                      <h5>vocals, rhythm guitar</h5>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="single-event">
-                      <img class="img-responsive" src="assets/event/event3.png" alt="event-image" id="dim">
-                      <h4>Rob Bourdon</h4>
-                      <h5>drums</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+            <table id="pics" align="center">
+              <tr>
+                <td colspan="3">
+                  <h1>PREVIOUS WINNERS</h1>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <img id="img" class="circular" class="img-responsive" src="assets/event/event1.jpg" id="dim" alt="event-image">
+                </td>
+
+                <td>
+                  <img id="img" class="circular" class="img-responsive" src="assets/event/event2.jpg" id="dim" alt="event-image">
+                </td>
+
+                <td>
+                  <img class="circular" class="img-responsive" src="assets/event/event3.png" alt="event-image" id="dim">
+                </td>
+
+              </tr>
+
+              <tr>
+
+                <td>
+                  <h4>Mike Shinoda</h4>
+                  <h5>vocals, rhythm guitar</h5>
+                </td>
+
+                <td>
+                  <h4>Chester Bennington</h4>
+                  <h5>Vocal</h5>
+                </td>
+
+                <td>
+                  <h4>Rob Bourdon</h4>
+                  <h5>drums</h5>
+                </td>
+
+              </tr>
+        </table>
       </div>
     </div>
   </section><!--/#event-->
 
   <section id="twitter">
+
+
     <img src="assets/twit.png" id="bird" />
     <img src="assets/twit.png" id="otherbird" />
     <table id="tweeter">
@@ -310,7 +322,7 @@ Kingdom Bound Artist.
       </tr>
     </table>
   </section><!--/#twitter-feed-->
-
+<!--
   <section id="sponsor">
     <div id="sponsor-carousel" class="carousel slide" data-interval="false">
       <div class="container">
@@ -350,7 +362,6 @@ Kingdom Bound Artist.
     </div>
   </section><!--/#sponsor-->
   <!--/#contact-->
-
   <footer id="footer">
     <div class="container">
       <div class="text-center">
