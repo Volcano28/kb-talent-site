@@ -14,7 +14,7 @@
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
-  
+
 body {
   font-family: 'Dosis', sans-serif;
   font-size: 17px;
@@ -378,8 +378,8 @@ h2 {
 **************************/
 
 #about {
-  background-color: #75B46E;
-  position: relative;
+  background-color: #21b68e;
+	background-image: url(http://www.transparenttextures.com/patterns/broken-noise.png);  position: relative;
   width: 100%;
   display: flex;
 }
@@ -391,12 +391,10 @@ h2 {
   padding-top: 3%;
 }
 .about-content {
-  width: 50%;
-  background-image: url("/assets/about-bg.jpg");
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 70px 70px 110px;
+  width: 100%;
+  background-size: contain;
+  position: relative;
+  overflow: hidden;
 }
 #about h2 {
   margin-bottom: 23px;
