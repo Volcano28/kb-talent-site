@@ -3,11 +3,38 @@
 /*************************
 *******Typography******
 **************************/
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+#subs{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+}
+#center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .submission{
 	background-color: #0C3E53;
-	background-size: contain;
 	position: relative;
 	overflow: hidden;
+	height: 350px;
+	background-image: url("http://www.transparenttextures.com/patterns/3px-tile.png");
+	background-repeat:repeat;
 }
 #pics{
 		width: 100%;
@@ -75,10 +102,6 @@
 
 	}
 
-	*{
-		color: white;
-		font-family: Geneva,Tahoma,Verdana,sans-serif;
-	}
 /*Added Stuff*/
 .circular {
 	width: 300px;
@@ -94,13 +117,13 @@
 
 body {
   font-family: 'Dosis', sans-serif;
-  font-size: 17px;
+  font-size: large;
   color: #fff
 }
 .btn {
   border-radius: 0;
   font-family: 'Yanone Kaffeesatz', 'sans-serif';
-  font-size: 20px;
+  font-size: large;
   padding: 9px 23px;
 }
 a {
@@ -114,12 +137,12 @@ a:focus, a:hover {
   outline: none
 }
 
-h1 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 26.4px; } h3 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 15.4px; }
+h1 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: large; font-style: normal; font-variant: normal; font-weight: 500; line-height: 26.4px; } h3 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 15.4px; }
 .navbar-toggle {
   margin-top: 12px
 }
 
-h3 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 15.4px; }
+h3 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: large; font-style: normal; font-variant: normal; font-weight: 500; line-height: 15.4px; }
 
 .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -398,10 +421,8 @@ h3 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: 14px; font-style:
 #event {
   background-color: #33888F;
   background-image: url("/assets/performar-bg.jpg");
-  background-position: 50% 0;
-  background-size: contain;
-  position: relative;
-  background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 }
 .guitar {
   position: absolute;
@@ -474,7 +495,7 @@ h3 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: 14px; font-style:
   margin-bottom: 23px;
 }
 .about-content p {
-  font-size: 17px;
+  font-size: large;
   font-family: 'Dosis', sans-serif;
 }
 #about .btn-primary {
@@ -519,7 +540,7 @@ h3 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: 14px; font-style:
   margin-bottom: 30px;
 }
 #twitter-feed .item a, #twitter-feed .item p {
-  font-size: 24px;
+  font-size: large;
   font-weight: 300;
   font-family: 'Yanone Kaffeesatz', 'sans-serif';
 }
@@ -533,7 +554,7 @@ h3 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: 14px; font-style:
   position: absolute;
   color: #00c3ff;
   top: 59%;
-  font-size: 24px
+  font-size: large;
 }
 .twitter-control-left {
   left: 0;
@@ -580,7 +601,7 @@ h3 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: 14px; font-style:
 }
 .sponsor-control-left, .sponsor-control-right {
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: large;
   position: absolute;
   top: 20%;
 }
@@ -628,7 +649,7 @@ h3 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: 14px; font-style:
   margin-bottom: 25px
 }
 #contact address {
-  font-size: 18px;
+  font-size: large;
   color: #373737;
 }
 .contact-text {
@@ -641,7 +662,7 @@ h3 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: 14px; font-style:
   outline: 0 none;
   border-radius: 0;
   color: #797979;
-  font-size: 18px;
+  font-size: large;
 }
 #contact-section .form-control:focus {
   border-color: #ae750d;
@@ -657,7 +678,7 @@ h3 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: 14px; font-style:
   background-color: #373737;
   color: #f7ab24;
   border: none;
-  font-size: 24px;
+  font-size: large;
   padding: 6px 42px;
   margin-bottom: 110px;
   margin-top: 10px
