@@ -29,11 +29,11 @@
 }
 
 .submission{
-	background-color: #0C3E53;
+	background-color: #21b68e;
 	position: relative;
 	overflow: hidden;
 	height: 350px;
-	background-image: url("http://www.transparenttextures.com/patterns/3px-tile.png");
+	background-image: url(http://www.transparenttextures.com/patterns/broken-noise.png) ;
 	background-repeat:repeat;
 }
 #pics{
@@ -46,8 +46,9 @@
 }
 
 .winning{
-	width: 50%;
+	width: 60%;
 	height: 100%;
+	padding-bottom: 20px;
 }
 
 #dim{
@@ -473,8 +474,8 @@ h3 { font-family: Geneva,Tahoma,Verdana,sans-serif; font-size: large; font-style
 **************************/
 
 #about {
-  background-color: #21b68e;
-	background-image: url(http://www.transparenttextures.com/patterns/broken-noise.png);  position: relative;
+  background-color: #16728f;
+	background-image: url("http://www.transparenttextures.com/patterns/3px-tile.png");  position: relative;
   width: 100%;
   display: flex;
 }
