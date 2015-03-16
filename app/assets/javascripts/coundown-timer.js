@@ -8,7 +8,7 @@
 
 	//array of custom settings
 	var settings = {
-		date: "10 May 2015 17:30:00", // add the countdown's end date (i.e. 3 november 2012 12:00:00)
+		date: "15 April 2015 23:59:59", // add the countdown's end date (i.e. 3 november 2012 12:00:00)
 		format: "off" // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
 	};
 
